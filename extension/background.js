@@ -11,4 +11,4 @@ function navigate(url) {
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
     navigate("http://localhost:1337" + "/?q=" + text);
-});
+}); 
