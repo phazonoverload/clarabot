@@ -1,3 +1,5 @@
+![Clara Icon](https://raw.githubusercontent.com/phazonoverload/clarabot/master/clara-icon.png)
+
 Clarabot
 ===========================
 
