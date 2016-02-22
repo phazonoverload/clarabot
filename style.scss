@@ -1,0 +1,78 @@
+$primary: #70FF8F;
+$text: #3C3C3C;
+$lightgrey: #D8D8D8;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: $text;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    border: 10px solid $primary;
+    padding: 30px;
+}
+
+.top {
+    margin-bottom:30px;
+}
+
+img.logo {
+    height: 100px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+input[type=text] {
+    padding: 0.75em;
+    width: 400px;
+    outline: none;
+    border: 2px solid $lightgrey;
+    transition: 0.5s all ease-in;
+    font-size: 1em;
+    &:focus {
+        border-color: $primary;
+        transition: 0.5s all ease-in;
+    }
+}
+
+button {
+    @extend input[type=text];
+    width: 150px;
+    background: $primary;
+    border-color: $primary;
+    color: white;
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($primary, 30%);
+        cursor: pointer;
+    }
+}
+
+ul {
+    .tag {
+        display: inline-block; 
+        padding: 0.5em 0.75em;
+        background: $lightgrey;
+        color: $text;
+        margin: 0 0.75em 0.75em 0;
+    }
+}
+
+.image img {
+    width: 50%;
+    display: block;
+    margin-top: 1em;
+}
