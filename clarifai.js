@@ -43,18 +43,18 @@ function parseResponse(resp) {
     var docId = results[0].result.docid;
   } else {
     console.log('Sorry, something is wrong.');
-  } 
+  }
   $('#tags').text(tags.toString().replace(/,/g, '/'));
   tagFormatting();
 }
 
 function tagFormatting() {
-  var tagArray = $("#tags").html().split("/");
+  var tagArray = $('#tags').html().split('/');
   console.log(tagArray);
   $(tagArray).each(function(i, tag) {
-    $("ul").append("<div class='tag'>" + tag + "</div>")
+    $('ul').append('<div class="tag">' + tag + '</div>')
   });
-  $("#tags").remove();
+  $('#tags').remove();
 }
 
 function run(imgurl) {
@@ -71,7 +71,7 @@ function run(imgurl) {
 var passedUrl = window.location.href.split("q=")[1];
 $(document).ready(function() {
   $('#imgurl').attr('value', passedUrl);
-  $("button").click();
-  $(".image").empty();
-  $(".image").append("<img src='" + passedUrl + "'>");
+  $('button').click();
+  $('.image').empty();
+  $('.image').append('<img src="' + passedUrl + '">');
 });
